@@ -77,6 +77,14 @@ function arrayContiene(array, elemento) {
     
   }
   return false;
+
+  //Otra Forma
+//   if(array.includes(element)){
+//     return true;
+// } else {
+//     return false;
+// }
+
 }
 
 
@@ -89,6 +97,9 @@ function agregarNumeros(numeros) {
    sumanumeros = numeros[i] + sumanumeros;
   }
   return sumanumeros;
+
+  //Otra Forma
+  //return array.reduce((acc, current) => acc + current);
 }
 
 
@@ -102,6 +113,9 @@ function promedioResultadosTest(resultadosTest) {
   }
   var promediotest = sumandotest / resultadosTest.length;
   return promediotest;
+
+  //Otra Forma
+  //return (array.reduce((acc, curr) => (acc + curr)))/array.length;
 }
 
 
@@ -197,6 +211,11 @@ function mesesDelAño(array) {
     if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
       nuevoarray.push(array[i]);
     }
+  //Otra Forma, esta reempalazaría toda la porción de codigo que esta arriba de esta linea.
+
+  //let nuevoarray = array.filter(e => e === 'Enero' || e === 'Marzo' || e === 'Noviembre');
+
+  //Lo que esta debajo es igual
   }
   if(nuevoarray.length < 3){
     return "No se encontraron los meses pedidos";
@@ -216,6 +235,10 @@ function mayorACien(array) {
     }
    }
    return mayoresa100;
+
+   //Otra Forma
+   //let arr = array.filter(e => e > 99);
+   // return arr;
 }
 
 
