@@ -62,6 +62,10 @@ function filter(array) {
     }
   }
   return narray;
+
+  //Otra forma
+  //return array.filter(e => e[0] === "a")
+  //con esta sola linea remplazo todo lo anterior
 }
 
 // No modificar nada debajo de esta línea
