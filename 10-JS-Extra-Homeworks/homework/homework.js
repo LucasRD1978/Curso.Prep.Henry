@@ -16,6 +16,8 @@ function deObjetoAmatriz(objeto){
     }
   );
   return ObjetoMatriz;
+  //Otra forma
+// return Object.entries(objeto)
 }
 
 
@@ -32,6 +34,7 @@ for(let i = 0; i < string.length; i ++){
   letras[string[i]] += 1;
 }
 return letras;
+
 }
 
 
